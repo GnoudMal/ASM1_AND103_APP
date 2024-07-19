@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etFoodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter food name"
+        android:inputType="text"
+        android:padding="8dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etFoodImage"
+        android:layout_below="@id/etFoodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter URI image "
+        android:inputType="text"
+        android:padding="8dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etServingSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter serving size"
+        android:inputType="text"
+        android:padding="8dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_below="@id/etFoodImage"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter price"
+        android:inputType="numberDecimal"
+        android:padding="8dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_below="@id/etServingSize"/>
+
+    <Button
+        android:id="@+id/btnAddFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Food"
+        android:backgroundTint="#7EAA90"
+        android:layout_below="@id/etPrice"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>
